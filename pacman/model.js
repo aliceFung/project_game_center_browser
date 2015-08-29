@@ -8,9 +8,9 @@ var model = {
     this.ghost = new Monster('ghost');
   },
 
-  updatePacmanMove: function(){
+  updatePacmanMove: function(newDivID){
+    // this.maze[oldDivID] = this.itemPosition['pacman'];
     this.maze[newDivID] = 'pacman';
-    this.maze[oldDivID] = this.itemPosition['pacman'];
     this.itemPosition['pacman'] = newDivID;
   }
 
